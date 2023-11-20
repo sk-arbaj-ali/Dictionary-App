@@ -1,16 +1,33 @@
 import React from 'react';
 import speakerIcon from '../assets/icons8-speaker-96.png';
 
+
+const FindPhonetic = ({phonetics}) =>{
+    let text = "";
+    let audio = "";
+    for(let obj of phonetics){
+        if( ("text" in obj) && ("audio" in obj)){
+            text = obj.text;
+            audio = obj.text;
+            break;
+        }
+    }
+    return (
+        <p>
+            <i>{text}</i>
+            <a href={audio}>
+                <img src={speakerIcon} alt="speaker icon" width="40px" />
+            </a>
+        </p>
+    )
+};
+
 const WordPhonetic = ({phonetics, word}) =>{
+
     return (
         <div className="word-phonetic" style={styles}>
             <p>{word}</p>
-            <p>
-                <i>{phonetics[1].text}</i>
-                <a href={phonetics[1].audio}>
-                    <img src={speakerIcon} alt="speaker icon" width="40px" />
-                </a>
-            </p>
+            <FindPhonetic phonetics={phonetics} />
         </div>
     );
 };
