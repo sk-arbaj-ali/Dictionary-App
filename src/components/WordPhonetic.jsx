@@ -1,13 +1,15 @@
 import React from 'react';
 import speakerIcon from '../assets/icons8-speaker-96.png';
 
-const WordPhonetic = () =>{
+const WordPhonetic = ({phonetics, word}) =>{
     return (
         <div className="word-phonetic" style={styles}>
-            <p>Word</p>
+            <p>{word}</p>
             <p>
-                <i>phonetic</i>
-                <img src={speakerIcon} alt="speaker icon" width="40px" />
+                <i>{phonetics[1].text}</i>
+                <a href={phonetics[1].audio}>
+                    <img src={speakerIcon} alt="speaker icon" width="40px" />
+                </a>
             </p>
         </div>
     );

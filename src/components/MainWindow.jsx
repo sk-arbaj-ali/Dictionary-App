@@ -17,7 +17,14 @@ const MainWindow = () =>{
     return (
         <div className="main-window">
             <SearchComponent handleDataFetching={handleDataFetching} />
-            <WordComponent />
+            {
+                fetchedWordData 
+                && 
+                <WordComponent 
+                    meanings={fetchedWordData[0].meanings}
+                    phonetics={fetchedWordData[0].phonetics}
+                    word={fetchedWordData[0].word}
+                />}
         </div>
     );
 };
