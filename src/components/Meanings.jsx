@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, Switch, Route} from 'react-router-dom';
 
 const PartsOfSpeech = ({partOfSpeech}) =>{
     return (
@@ -6,7 +7,6 @@ const PartsOfSpeech = ({partOfSpeech}) =>{
     );
 };
 
-let def = [{def:"definition_one",ex:"example_one"},{def:"definition_two",ex:"example_two"},{def:"definition_three",ex:"example_three"}];
 
 const Definition = ({def}) =>{
     return (
@@ -36,11 +36,24 @@ const MeaningCard = ({partsOfSpeech_And_DefinitionObject}) =>{
 const Meanings = ({meaningArray=[]}) =>{
     return (
         <div className="Meanings" style={styles}>
-            {
-                meaningArray.map(function(value){
-                    return <MeaningCard partsOfSpeech_And_DefinitionObject={value} key={value.partOfSpeech} />;
-                })
-            }
+            <ul>
+                {
+                    meaningArray.map(function(value){
+                        return <li key={value.partOfSpeech}><Link to={`/${value.partOfSpeech}`}>{value.partOfSpeech}</Link></li>
+                    })
+                }
+            </ul>
+            <Switch>
+                {
+                    meaningArray.map(function(value){
+                        return (
+                        <Route exact path={`/${value.partOfSpeech}`} key={value.partOfSpeech}>
+                            <MeaningCard partsOfSpeech_And_DefinitionObject={value} />
+                        </Route>
+                        );
+                    })
+                }
+            </Switch>
         </div>
     );
 };
