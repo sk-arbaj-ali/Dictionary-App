@@ -1,0 +1,26 @@
+
+.word-phonetic {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: black;
+}
+
+.word-phonetic > p:first-child{
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.word-phonetic > p:last-child{
+    font-size: 1.2rem;
+}
+
+.find-phonetic {
+    display: flex;
+    align-items: center;
+}
+
+.find-phonetic img {
+    width: 35px;
+    margin: 0 1rem;
+}

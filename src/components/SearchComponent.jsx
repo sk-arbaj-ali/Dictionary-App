@@ -1,5 +1,6 @@
 import React from 'react';
 import searchIcon from '../assets/icons8-search-128.png';
+import '../styles/SearchComponent.css';
 
 const SearchComponent = ({handleDataFetching}) =>{
 

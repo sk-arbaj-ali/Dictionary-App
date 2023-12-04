@@ -1,0 +1,46 @@
+.Meanings {
+    display: flex;
+    flex-direction: column;
+}
+
+.Meanings > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.Meanings > ul  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #A6CF98;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.meaning-card {
+    display:flex;
+    flex-direction: column;
+    margin: 0 0.4rem;
+    font-size: 1.2rem;
+}
+
+.partsOfSpeech {
+    background-color: #9AD0C2;
+    width: min-content;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    color:black;
+    border: 2px solid black;
+}
+
+.meaning-card-definition {
+    color: black;
+    margin-left: 0.5rem;
+}
+
+.meaning-card-definition > p::before {
+    content: "--";
+}

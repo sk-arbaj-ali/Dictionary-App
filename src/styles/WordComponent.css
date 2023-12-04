@@ -1,0 +1,8 @@
+
+.word-component {
+    width: 55vw;
+    background: #818FB4;
+    /* background: #164863; */
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}

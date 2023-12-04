@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchComponent from './SearchComponent';
 import WordComponent from './WordComponent';
+import '../styles/MainWindow.css';
 
 let url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
@@ -9,6 +10,7 @@ const MainWindow = () =>{
     const [fetchedWordData, setFetchedWordData] = React.useState(null);
     const [loading, setLoading] = React.useState(false);
     const [dataNotFound, setDataNotFound] = React.useState(false);
+
     const handleDataFetching = (word) =>{
         setLoading(true);
         fetch(`${url}${word}`)

@@ -1,5 +1,6 @@
 import React from 'react';
 import speakerIcon from '../assets/icons8-speaker-96.png';
+import '../styles/WordPhonetic.css';
 
 
 const FindPhonetic = ({phonetics}) =>{
@@ -13,7 +14,7 @@ const FindPhonetic = ({phonetics}) =>{
         }
     }
     return (
-        <p>
+        <p className='find-phonetic'>
             <i>{text}</i>
             <a href={audio}>
                 <img src={speakerIcon} alt="speaker icon" width="40px" />
@@ -25,7 +26,7 @@ const FindPhonetic = ({phonetics}) =>{
 const WordPhonetic = ({phonetics, word}) =>{
 
     return (
-        <div className="word-phonetic" style={styles}>
+        <div className="word-phonetic">
             <p>{word}</p>
             <FindPhonetic phonetics={phonetics} />
         </div>
@@ -33,5 +34,3 @@ const WordPhonetic = ({phonetics, word}) =>{
 };
 
 export default WordPhonetic;
-
-let styles = {border:"2px solid black",marginTop:"2px",marginBottom:"2px",};

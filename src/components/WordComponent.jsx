@@ -2,6 +2,7 @@ import React from 'react';
 import WordPhonetic from './WordPhonetic';
 import OriginOfWord from './OriginOfWord';
 import Meanings from './Meanings';
+import '../styles/WordComponent.css';
 
 const WordComponent = ({loading,dataNotFound,meanings,phonetics,word,origin=null}) =>{
     
