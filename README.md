@@ -1,8 +1,12 @@
-# React + Vite
+# Dictionary At Your Service
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web-app is built using ReactJS.
+This is a project to learn ReactJS and deploy the web-app.
+You can search meaning of words easily with this website.
 
-Currently, two official plugins are available:
+# Main libraries used in this project - 
+ - ReactJS
+ - React-Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# API used - 
+ - free dictionary api (https://api.dictionaryapi.dev/api/v2/entries/en/)
