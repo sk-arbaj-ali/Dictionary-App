@@ -45,7 +45,7 @@
     content: "--";
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .Meanings > ul {
         flex-direction: column;
         height: 18vh;

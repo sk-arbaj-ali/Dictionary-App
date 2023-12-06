@@ -27,7 +27,7 @@
     margin: 0 1rem;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .word-phonetic {
         align-items: center;
     }

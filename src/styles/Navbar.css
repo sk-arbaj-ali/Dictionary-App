@@ -20,7 +20,7 @@
     font-size: 2rem;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .navbar > img {
         margin-left: 10px;
     }
