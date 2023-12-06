@@ -44,3 +44,15 @@
 .meaning-card-definition > p::before {
     content: "--";
 }
+
+@media screen and (max-width: 380px) {
+    .Meanings > ul {
+        flex-direction: column;
+        height: 18vh;
+        width: 100%;
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        align-items: center;
+    }
+}

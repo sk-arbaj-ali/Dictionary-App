@@ -8,6 +8,7 @@
     font-family: 'Raleway', sans-serif;
     color:white;
     font-weight: 600;
+    text-align: center;
 }
 
 .navbar > img {
@@ -17,4 +18,10 @@
 
 .navbar > p {
     font-size: 2rem;
+}
+
+@media screen and (max-width: 380px){
+    .navbar > img {
+        margin-left: 10px;
+    }
 }
